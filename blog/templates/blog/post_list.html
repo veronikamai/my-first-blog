@@ -1,13 +1,9 @@
-{% load static %}
 <html>
-<head>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-	<title>Verutes blogas</title>
-</head>
-<body>
-<div>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 
@@ -18,6 +14,5 @@
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
-
-</body>
+    </body>
 </html>
